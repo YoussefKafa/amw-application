@@ -11,19 +11,19 @@ import {admin, protect} from '../middleware/authMiddleware.js'
 
 const vehicleRouter = express.Router()
 
-router.route('/signup')
+vehicleRouter.route('/signup')
     .post(createVehicle)
 
-router.route('/login')
+    vehicleRouter.route('/login')
     .post(loginVehicle)
 
-router.route('/')
+    vehicleRouter.route('/')
     .get(protect,admin,getVehicles)
 
-router.route('/currentVehicle')
+    vehicleRouter.route('/currentVehicle')
     .get(protect,getCurrentVehicle,)
 
-router.route('/:id/cross')
+    vehicleRouter.route('/:id/cross')
     .get(protect,admin,crossVehicle)
 
 

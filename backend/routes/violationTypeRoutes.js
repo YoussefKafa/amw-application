@@ -4,10 +4,10 @@ import { admin, protect } from '../middleware/authMiddleware.js'
 
 const violationTypeRouter = express.Router()
 
-router.route('/')
+violationTypeRouter.route('/')
     .post(protect,admin,createViolationType)
     .get(protect,admin,getViolationTypes)
-router.route('/:id')    
+    violationTypeRouter.route('/:id')    
     .put(protect,admin,updateViolationType)
     .delete(protect,admin,deleteViolationType)
 
