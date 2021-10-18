@@ -5,7 +5,7 @@ import {
     getCurrentVehicle,
     getVehicles,
     loginVehicle
-} from '../controllers/vehicleController'
+} from '../controllers/vehicleController.js'
 
 import {admin, protect} from '../middleware/authMiddleware'
 
