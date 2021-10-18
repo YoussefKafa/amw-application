@@ -2,11 +2,11 @@ import express from 'express';
 import dotenv from 'dotenv';
 import colors from 'colors';
 import morgan from 'morgan';
-import connectDB from './config/db.js';
-import vehicleRouter from './routes/vehicleRoutes.js'
-import violationTypeRouter from './routes/violationTypeRoutes.js'
-import violationRouter from './routes/violationRoutes.js'
-import { errorHandler } from './middleware/errorMiddleware.js'
+import connectDB from './backend/config/db';
+import vehicleRouter from './backend/routes/vehicleRoutes'
+import violationTypeRouter from './backend/routes/violationTypeRoutes'
+import violationRouter from './backend/routes/violationRoutes'
+import { errorHandler } from './backend/middleware/errorMiddleware'
 import cors from 'cors';
 
 
