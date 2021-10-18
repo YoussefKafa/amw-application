@@ -1,6 +1,6 @@
 import asyncHandler from 'express-async-handler'
-import Vehicle from '../models/vehicleModel.js'
-import Violation from '../models/violationModel.js'
+import Vehicle from '../models/vehicleModel'
+import Violation from '../models/violationModel'
 
 // @desc   Create new Violation
 // @route  POST /api/violations

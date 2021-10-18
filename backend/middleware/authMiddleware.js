@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken'
 import asynchHandler from 'express-async-handler'
-import Vehicle from '../models/vehicleModel.js'
+import Vehicle from '../models/vehicleModel'
 
 const protect = asynchHandler(async (req, res, next) => {
 
