@@ -12,7 +12,7 @@ import cors from 'cors';
 
 dotenv.config({ path: './.env' })
 
-connectDB(process.env.MONGO_URI)
+connectDB("mongodb+srv://admin:12345@cluster0.ab2ts.mongodb.net/amw?retryWrites=true&w=majority")
 
 const app = express();
 
