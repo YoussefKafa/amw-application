@@ -12,4 +12,4 @@ router.route('/:id')
     .delete(protect,admin,deleteViolationType)
 
 
-export default router
+export default violationTypeRouter

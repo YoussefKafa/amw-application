@@ -1,6 +1,6 @@
 import express from 'express'
-import {createViolation, deleteViolation, filterViolations,getCurrentPlugedNumberViolations, getViolation, payViolation, updateViolation} from '../controllers/violationController'
-import { admin, protect } from '../middleware/authMiddleware'
+import {createViolation, deleteViolation, filterViolations,getCurrentPlugedNumberViolations, getViolation, payViolation, updateViolation} from '../controllers/violationController.js'
+import { admin, protect } from '../middleware/authMiddleware.js'
 
 const router = express.Router()
 
@@ -20,4 +20,4 @@ router.route('/:id/pay')
 router.route('/filters/query')
     .get(protect,admin,filterViolations)
 
-export default router
+export default violationRouter

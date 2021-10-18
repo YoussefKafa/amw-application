@@ -1,6 +1,6 @@
 import asyncHandler from 'express-async-handler'
-import Vehicle from '../models/vehicleModel'
-import generateToken from '../utils/generateToken'
+import Vehicle from '../models/vehicleModel.js'
+import generateToken from '../utils/generateToken.js'
 
 // @desc   Create new Vehicles/Driver Account
 // @route  POST /api/vehicles/signup

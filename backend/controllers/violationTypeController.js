@@ -1,5 +1,5 @@
 import asyncHandler from 'express-async-handler'
-import ViolationType from '../models/violationTypeModel'
+import ViolationType from '../models/violationTypeModel.js'
 
 // @desc   Create new Violation Type
 // @route  POST /api/violationtypes/
