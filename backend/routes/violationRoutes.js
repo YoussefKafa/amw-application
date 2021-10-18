@@ -2,7 +2,7 @@ import express from 'express'
 import {createViolation, deleteViolation, filterViolations,getCurrentPlugedNumberViolations, getViolation, payViolation, updateViolation} from '../controllers/violationController.js'
 import { admin, protect } from '../middleware/authMiddleware.js'
 
-const router = express.Router()
+const violationRouter = express.Router()
 
 router.route('/')
     .get(protect,getCurrentPlugedNumberViolations)

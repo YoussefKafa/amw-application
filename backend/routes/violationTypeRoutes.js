@@ -2,7 +2,7 @@ import express from 'express'
 import { createViolationType, deleteViolationType, getViolationTypes, updateViolationType } from '../controllers/violationTypeController.js'
 import { admin, protect } from '../middleware/authMiddleware.js'
 
-const router = express.Router()
+const violationTypeRouter = express.Router()
 
 router.route('/')
     .post(protect,admin,createViolationType)

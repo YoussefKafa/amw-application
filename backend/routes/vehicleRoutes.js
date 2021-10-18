@@ -9,7 +9,7 @@ import {
 
 import {admin, protect} from '../middleware/authMiddleware.js'
 
-const router = express.Router()
+const vehicleRouter = express.Router()
 
 router.route('/signup')
     .post(createVehicle)
