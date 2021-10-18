@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import colors from 'colors';
 import morgan from 'morgan';
 import connectDB from './backend/config/db.js';
-import vehicleRouter from './backend/routes/vehicleRoutes.js'
+import vehicleRouter from './backend/routes/vehicleRoutes'
 import violationTypeRouter from './backend/routes/violationTypeRoutes.js'
 import violationRouter from './backend/routes/violationRoutes.js'
 import { errorHandler } from './backend/middleware/errorMiddleware.js'
