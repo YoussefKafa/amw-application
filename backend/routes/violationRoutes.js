@@ -1,6 +1,6 @@
 import express from 'express'
-import {createViolation, deleteViolation, filterViolations,getCurrentPlugedNumberViolations, getViolation, payViolation, updateViolation} from '../controllers/violationController.js'
-import { admin, protect } from '../middleware/authMiddleware.js'
+import {createViolation, deleteViolation, filterViolations,getCurrentPlugedNumberViolations, getViolation, payViolation, updateViolation} from '../controllers/violationController'
+import { admin, protect } from '../middleware/authMiddleware'
 
 const router = express.Router()
 

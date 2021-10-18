@@ -5,9 +5,9 @@ import {
     getCurrentVehicle,
     getVehicles,
     loginVehicle
-} from '../controllers/vehicleController.js'
+} from '../controllers/vehicleController'
 
-import {admin, protect} from '../middleware/authMiddleware.js'
+import {admin, protect} from '../middleware/authMiddleware'
 
 const router = express.Router()
 
