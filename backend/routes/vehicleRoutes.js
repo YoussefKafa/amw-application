@@ -27,4 +27,4 @@ router.route('/:id/cross')
     .get(protect,admin,crossVehicle)
 
 
-export default router
+export default vehicleRouter
